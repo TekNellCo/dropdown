@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1f1f1f;
+}
+.toolbar {
+  display: flex;
+  background-color: pink;
+  padding: 1rem;
+  gap: 1rem;
+}
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  transform: translateX(-0.75rem);
+  top: calc(100% + 0.25rem);
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  opacity: 0;
+  text-transform: uppercase;
+}
+.dropdown > .link:focus + .dropdown-menu {
+  opacity: 1;
+}
