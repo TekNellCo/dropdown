@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="toolbar">
-      <div class="dropdown">
-        <button class="link">References</button>
-        <div class="dropdown-menu">Dropdown Content</div>
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>References</button>
+        <div class="dropdown-menu">
+          <a href="#">Heads</a>
+          <a href="#">Hands</a>
+          <a href="#">Feet</a>
+        </div>
       </div>
-      <button class="link">Videos</button>
-      <button class="link">Information</button>
+
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Videos</button>
+        <div class="dropdown-menu">Funniest Videos</div>
+      </div>
+
+      <button>Drawings</button>
     </div>
   </body>
 </html>
